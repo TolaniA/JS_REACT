@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--This is a comment-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!--this refers to a self-enclosing tag-->
+<meta name="description" content="Learning HTML"/>
+<meta name="keywords" content="HTML, frontend development, developer"/>
+<meta name="viewport" content="width: device-width, initial scale=1.0"/>
+<meta name="author" content="Tolani Oyewole"/>
+<title>Homepage</title>
+<link rel="stylesheet" href="style.css"/> <!--link to the external stylesheet-->
+
+<!--internal stylesheet (applies to this page alone)-->
+<style>
+p {
+    color: lavender;
+}
+</style>
+</head>
+<body>
+    <header>
+        <!--this shows the logo-->
+        <a href="index.html">Logo</a>
+        <!--navigation section-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#about-bootcamp">Go to the bootcamp section</a>
+        </nav>    
+    </header>
+    <main>
+        <section class="text-center">
+            <div> 
+                <!--this serves as a container-->
+            <h1>Homepage</h1>
+            <!--largest and most important heading-->
+            <h2>Heading Two</h2>
+            <h3>Heading Three</h3>
+            <h4>Heading Four</h4>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+            <!--smallest and least important heading-->
+        </div>
+        </section>
+
+        <section class="text-center">
+            <h1>Homepage</h1>
+            <!-- largest and most important heading element-->
+            <h2>Heading Two</h2>
+            <h3>Heading Three</h3>
+            <h4>Heading Four</h4>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+            <!-- smallest and least important heading -->
+            <p>This is a paragraph</p>
+            <p>
+              This is <br />
+              another paragraph
+            </p>
+          </section>
+
+        <p>This is a paragraph</p>
+        <p style="color: palevioletred;">This is <br/> another paragraph</p>
+        </section>
+
+        <section id="about-bootcamp">
+            <h1 class="text-center">About the bootcamp</h1>
+            <p>Training Ground for <strong>ambitious</strong> people in <span>tech</span> globally.
+            </p>
+            <h6>What you will <em>learn</em></h6>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React</p>
+            <p>Redux</p>
+          </section>
+
+          <p>This is an <strong>important</strong> text</p>
+          <p>This is an <em>emphasized</em> text</p>
+          <p>This is an <i>italicized</i> text</p>
+          <p>This is a <mark>highlighted</mark> text</p>
+          <p>This is a <del>striked</del> text</p>
+          <p>H <sub>2</sub>0</p>
+          <p>X <sup>2</sup></p>
+          <div>
+            <h2>Grocery List</h2>
+            <ul>
+                <li>Milk</li>
+                <li>Eggs</li>
+                <li>Yogurt</li>
+            </ul>
+            <ol type="a">
+                <li>Sugar</li>
+                <li>Vegetables</li>
+                <li>Tomatoes</li>
+            </ol>
+            <ol>
+                <li>Lemon</li>
+                <li>Grapes</li>
+            </ol>
+            <ol type="i">
+                <li>Pepper</li>
+                <li>Fish</li>
+                <li>Rice</li>
+            </ol>
+          </div>
+
+          <blockquote cite="https://facebook.com/mybiz/review1">
+            <p>
+                I was really happy with the work that she did! 
+                I would recommend her services.
+            </p>
+                  </blockquote>
+          <q>This is a short quotation</q>
+          <p><cite>The Scream</cite> by Edward Munch. Painted in 1885</p>
+          <form>
+            <div>
+            <label for="fullname">What is your name?</label>
+            <input 
+            type="text" 
+            id="fullname"
+            class="form-element" 
+            name="full name" 
+            placeholder="Type your full name" 
+            required
+            /> 
+        </div>
+
+        <div>
+            <label for="emailaddress">What is your email address?</label>
+            <input type="email" 
+            name="emailaddress" 
+            id="emailaddress"
+            class="form-element" 
+            placeholder="Type your email"
+            required
+            />
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea
+            id="message"
+            class="form-element" 
+            name="message"
+            placeholder="Type your message..."
+            rows="5"
+            ></textarea>
+        </div>
+
+        <div>
+           <label>Favorite web language</label>
+           <input type="radio" id="html" name="fav_language" value="HTML"/>
+           <label for="html">HTML</label>
+           <input type="radio" id="css" name="fav_language" value="CSS"/>
+           <label for="css">CSS</label>
+           <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+           <label for="javascript">JavaScript</label>
+        </div>
+
+        <div>
+            <label>Favorite Programming Languages</label>
+            <input type="checkbox" id="python" name="fav_programming_language" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="fav_programming_language" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="ruby" name="fav_programming_language" value="ruby">
+            <label for="ruby">Ruby</label>
+        </div>
+
+        <div>
+            <label for="bootcamps">
+                Select the NIYO Bootcamp Programme/Course you are interested in
+            </label>
+            <select id="bootcamps"  class="form-element" name="bootcamps" multiple>
+                <option value="software">
+                    A. Software development bootcamp</option>
+                <option value="data_analytics">
+                   B. Data analytics with project managemeent bootcamp
+                </option>
+                <option value="marketing">
+                    C. Marketing for digital entrepreneurship bootcamp
+                </option>
+            </select>
+        </div>
+        <!--submit button using an input element-->
+        <!--<input type="submit" value="Submit"> -->
+
+        <!--submit button using button element-->
+        <button type="submit">Submit</button>
+          </form>
+
+          <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Businesses</th>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>5</td>
+            </tr>
+          </table>
+
+          <img src="images/biz.jpeg" alt="Business woman" />
+          <audio controls>
+            <source src="images/lazy-village-15547.mp3" type="audio/mp3" /> 
+            Your browser doesn't support the audio element
+          </audio>
+
+          <video controls autoplay width="250" height="200">
+            <source src="images/drive.mp4" type="video/mp4" />
+            Your browser doesn't support the video element
+          </video>
+        </main>
+    <footer>
+        <a href="https://twitter.com/niyobootcamps?s=21&t=pGaqXPG0rgChO94aYF2r7g" target="_blank">Check us out on twitter</a>
+        <p>&copy; Copyright 2024</p>
+    </footer>
+
+    <script src="js/index.js" type="module"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+</body>
+</html>

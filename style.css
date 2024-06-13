@@ -1,0 +1,122 @@
+p
+{
+    color: blue;
+    font-size: 16px;
+}
+#about-bootcamp
+{
+    background-color: rgb(232, 120, 232);
+    padding: 10px;
+}
+
+body
+{
+    background-color: plum;
+    margin: 0;
+    padding: 10px;
+}
+
+nav
+{
+    background: white;
+}
+.text-center {
+    text-align: center;
+}
+
+footer
+{
+    background: rgb(230, 73, 144);
+    padding: 20px;
+}
+h3
+{
+    text-align: left;
+    color: rgb(187, 41, 187);
+}
+h6
+{
+    font-size: 30px;
+    color: rgb(230, 73, 144);
+    text-align: center;
+}
+.form-element{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+button{
+    background: rgb(230, 62, 90);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+table{
+    width: 100%;
+}
+th{
+    font-size: 18px;
+}
+img{
+    width: 250px;
+    height: 150px;
+}
+section p {
+    text-decoration: underline;
+  }
+  section > p {
+    letter-spacing: 10px;
+  }
+  section ~ p {
+    word-spacing: 10px;
+    color: yellowgreen;
+  }
+  section + p {
+    text-transform: uppercase;
+  }
+  * {
+    color: orange;
+  }
+
+  h1 {
+    color: purple;
+  }
+  input[type="email"] {
+    font-size: 30px;
+  }
+  .flex-container {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-container > div {
+    width: 50%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    gap: 10px;
+  }
+  .grid-container > div {
+    background: brown;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    input[type="email"] {
+      font-size: 14px;
+    }
+    .flex-container {
+      flex-direction: column-reverse;
+    }
+    .flex-container > div {
+      width: 100%;
+    }
+}
